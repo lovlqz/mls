@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 12px; }
+
+.com-topbar a {
+  line-height: 20px;
+  cursor: pointer;
+  color: #666; }
+
+.com-topbar {
+  min-width: 1260px;
+  background-color: #F8F8F8;
+  height: 30px;
+  line-height: 30px; }
+  .com-topbar .inner {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right; }
+    .com-topbar .inner > ul .homepage {
+      float: left; }
+    .com-topbar .inner > ul .mydrop {
+      position: relative;
+      z-index: 6; }
+      .com-topbar .inner > ul .mydrop .my-down {
+        position: absolute;
+        top: 30px;
+        z-index: 9;
+        background-color: #F8F8F8;
+        padding: 8px 0;
+        border: 1px solid #eee;
+        line-height: 20px;
+        display: none;
+        margin-left: -4px; }
+    .com-topbar .inner > ul > li {
+      display: inline-block;
+      text-align: center; }
+      .com-topbar .inner > ul > li a:hover {
+        color: #f36; }
+      .com-topbar .inner > ul > li a {
+        border-right: 1px dotted #ccc;
+        padding: 0 18px;
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        cursor: pointer;
+        color: #666; }
+        .com-topbar .inner > ul > li a > em {
+          display: inline-block;
+          width: 18px;
+          height: 16px;
+          vertical-align: sub;
+          margin-right: 7px;
+          background: url("../img/idid_xiaotubiao.png") no-repeat; }
+        .com-topbar .inner > ul > li a .weixin-load {
+          background-position: -25px 0; }
+        .com-topbar .inner > ul > li a .qq-load {
+          background-position: -52px 0; }
+        .com-topbar .inner > ul > li a .my-collect {
+          background-position: -76px 0; }
+        .com-topbar .inner > ul > li a .my-shoppingcar {
+          background-position: -102px 0; }
+        .com-topbar .inner > ul > li a .my-order {
+          background-position: -130px 0; }
+        .com-topbar .inner > ul > li a .my-arrow {
+          background-position: -180px 0; }
+
+.com-search {
+  min-width: 1260px;
+  background: #fff; }
+  .com-search .inner {
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5; }
+    .com-search .inner .logo {
+      float: left;
+      margin-top: 40px; }
+    .com-search .inner .search {
+      width: 520px;
+      position: absolute;
+      top: 21px;
+      left: 50%;
+      margin-left: -240px; }
+      .com-search .inner .search .search-tab > span {
+        display: inline-block;
+        text-align: center;
+        width: 56px;
+        margin: 0 -5px 0 0;
+        background-color: #f2f2f2;
+        line-height: 24px;
+        cursor: pointer; }
+      .com-search .inner .search .search-tab .active {
+        background-color: #FF3366;
+        color: #fff; }
+      .com-search .inner .search .search-box {
+        height: 30px;
+        position: relative; }
+        .com-search .inner .search .search-box .search-text {
+          float: left;
+          border: 2px solid #FF3366;
+          width: 437px;
+          line-height: 28px;
+          height: 28px;
+          padding: 0;
+          margin: 0;
+          padding-left: 8px; }
+        .com-search .inner .search .search-box .search-button {
+          float: left;
+          width: 70px;
+          height: 31px;
+          background: #FF3366 url(../img/search-btn.png) no-repeat center;
+          cursor: pointer; }
+        .com-search .inner .search .search-box .search-suggest {
+          border: 1px solid #dddddd;
+          width: 447px;
+          background-color: #fff;
+          position: absolute;
+          left: 0;
+          top: 31px;
+          z-index: 999;
+          display: none; }
+      .com-search .inner .search .hot-word {
+        padding-top: 12px; }
+        .com-search .inner .search .hot-word > a {
+          padding-right: 8px; }
+    .com-search .inner .spread {
+      float: right;
+      margin-top: 3px; }
+      .com-search .inner .spread > img {
+        display: block; }
+
+.sec-nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ff3366;
+  margin-bottom: 10px;
+  background-color: #fff; }
+  .sec-nav ul {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+    .sec-nav ul .at {
+      height: 2px;
+      background: #ff3366;
+      width: 80px;
+      position: absolute;
+      top: 38px; }
+    .sec-nav ul > li {
+      float: left;
+      width: 80px;
+      text-align: center; }
+      .sec-nav ul > li .active {
+        color: #FF3366; }
+      .sec-nav ul > li > a {
+        float: left;
+        height: 38px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        padding: 0 15px;
+        margin-right: 12px;
+        display: inline-block;
+        text-align: center;
+        width: 50px; }
+
+/*# sourceMappingURL=header.css.map */

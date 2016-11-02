@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+.detail-wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+.resture-continer {
+  margin-top: 15px;
+  border: 1px solid #e1e1e1;
+  overflow: hidden; }
+  .resture-continer .resture-wrap {
+    margin: 20px 0;
+    float: left;
+    width: 25%; }
+    .resture-continer .resture-wrap .cataloginfo {
+      margin-left: 30px;
+      text-align: center;
+      float: left; }
+      .resture-continer .resture-wrap .cataloginfo > a {
+        display: block; }
+        .resture-continer .resture-wrap .cataloginfo > a .title {
+          padding: 2px;
+          font-size: 14px;
+          color: #333333;
+          font-weight: bold; }
+      .resture-continer .resture-wrap .cataloginfo .imgwrap {
+        margin-top: 10px;
+        display: block; }
+        .resture-continer .resture-wrap .cataloginfo .imgwrap > img {
+          display: block;
+          width: 60px; }
+    .resture-continer .resture-wrap .catalogchoice {
+      float: left;
+      margin-left: 15px; }
+      .resture-continer .resture-wrap .catalogchoice > ul > li {
+        margin-bottom: 10px;
+        color: #666; }
+
+.user-contain {
+  margin: 0 auto;
+  width: 1200px; }
+  .user-contain .choice {
+    overflow: hidden;
+    padding: 15px 0 7px;
+    color: #999999;
+    height: 26px;
+    line-height: 26px; }
+    .user-contain .choice > a {
+      display: block;
+      float: left; }
+    .user-contain .choice .serchoicewrap {
+      overflow: hidden;
+      float: left;
+      font-size: 0; }
+      .user-contain .choice .serchoicewrap > p {
+        display: block;
+        float: left; }
+  .user-contain .stylewrap {
+    padding: 0 20px;
+    border: 1px solid #E1E1E1; }
+    .user-contain .stylewrap .styleinfo {
+      overflow: hidden; }
+      .user-contain .stylewrap .styleinfo .stylecatalog {
+        height: 40px;
+        line-height: 40px;
+        overflow: hidden; }
+        .user-contain .stylewrap .styleinfo .stylecatalog .more {
+          display: none;
+          float: right;
+          height: 40px;
+          width: 80px;
+          line-height: 40px;
+          cursor: pointer;
+          color: #999999; }
+          .user-contain .stylewrap .styleinfo .stylecatalog .more .moredesc {
+            padding: 15px; }
+          .user-contain .stylewrap .styleinfo .stylecatalog .more .morearrow {
+            padding: 5px;
+            background: url(../img/idid_morearrow.png) no-repeat center center;
+            background-size: 10px; }
+        .user-contain .stylewrap .styleinfo .stylecatalog .mulchoice {
+          display: block;
+          float: right;
+          margin-top: .8%;
+          margin-right: 20px;
+          width: 34px;
+          height: 22px;
+          cursor: pointer;
+          line-height: 22px;
+          text-align: center;
+          border: 1px solid #DDDDDD;
+          color: #999999; }
+      .user-contain .stylewrap .styleinfo .stylecatalog:nth-child(n+1) {
+        border-bottom: 1px solid #E1E1E1; }
+      .user-contain .stylewrap .styleinfo .stylecontainer {
+        overflow: hidden; }
+        .user-contain .stylewrap .styleinfo .stylecontainer .style-title {
+          float: left;
+          color: #999999; }
+        .user-contain .stylewrap .styleinfo .stylecontainer .style-namewrap {
+          overflow: hidden;
+          float: left;
+          width: 880px; }
+          .user-contain .stylewrap .styleinfo .stylecontainer .style-namewrap a:hover {
+            color: #FF3366; }
+          .user-contain .stylewrap .styleinfo .stylecontainer .style-namewrap .stylename {
+            display: block;
+            float: left;
+            padding: 0 15px;
+            cursor: pointer;
+            color: #666666; }
+    .user-contain .stylewrap .filterwrap {
+      padding: 8px 0; }
+      .user-contain .stylewrap .filterwrap .filtertitle {
+        color: #999999;
+        height: 60px;
+        line-height: 29px; }
+      .user-contain .stylewrap .filterwrap .filterwrapul {
+        float: left;
+        width: 1000px;
+        margin: -55px 20px 0; }
+        .user-contain .stylewrap .filterwrap .filterwrapul .filter {
+          position: relative;
+          float: left;
+          margin: 0 15px 10px; }
+          .user-contain .stylewrap .filterwrap .filterwrapul .filter .filterinforname {
+            display: none;
+            position: absolute;
+            padding: 12px 0;
+            top: 21px;
+            z-index: 5;
+            width: 166px;
+            background-color: #fff;
+            border: 1px solid #DDDDDD; }
+            .user-contain .stylewrap .filterwrap .filterwrapul .filter .filterinforname .filterInfo {
+              float: left;
+              padding: 5px 7px;
+              cursor: pointer; }
+          .user-contain .stylewrap .filterwrap .filterwrapul .filter .filtername {
+            overflow: hidden;
+            padding: 3px 0 3px 10px;
+            z-index: 10;
+            border: 1px solid #DDDDDD;
+            background-color: #fff;
+            cursor: pointer; }
+            .user-contain .stylewrap .filterwrap .filterwrapul .filter .filtername > span {
+              display: block;
+              float: left; }
+            .user-contain .stylewrap .filterwrap .filterwrapul .filter .filtername .filterarrow {
+              padding: 7px 17px;
+              background: url(../img/idid_morearrow.png) no-repeat center center;
+              background-size: 10px; }
+  .user-contain .order-wrap {
+    margin-top: 10px;
+    background: #F5F5F5;
+    height: 40px;
+    border: 1px solid #E1E1E1; }
+    .user-contain .order-wrap .order-info {
+      cursor: pointer; }
+      .user-contain .order-wrap .order-info .price {
+        position: relative;
+        display: block; }
+      .user-contain .order-wrap .order-info .fashion {
+        display: block;
+        float: left;
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center; }
+        .user-contain .order-wrap .order-info .fashion > span {
+          line-height: 40px;
+          text-align: center; }
+        .user-contain .order-wrap .order-info .fashion .pricearrow {
+          margin-left: 3px;
+          width: 10px;
+          height: 40px;
+          background: url(../img/idid_morearrow.png) no-repeat center center;
+          background-size: 10px;
+          float: right; }
+        .user-contain .order-wrap .order-info .fashion .pricedesc {
+          display: none;
+          position: absolute;
+          top: -2px;
+          left: 0;
+          width: 106px;
+          border: 1px solid #C5C5C5;
+          background-color: #fff;
+          z-index: 10; }
+      .user-contain .order-wrap .order-info .active {
+        background: #fff; }
+    .user-contain .order-wrap .prise-wrap {
+      float: left;
+      margin-left: 22px;
+      height: 40px;
+      line-height: 40px; }
+      .user-contain .order-wrap .prise-wrap > input {
+        width: 62px;
+        height: 22px;
+        border: 1px solid #EAEAEA; }
+      .user-contain .order-wrap .prise-wrap > span {
+        line-height: 40px; }
+      .user-contain .order-wrap .prise-wrap .sure {
+        padding: 4px 5px;
+        border: 1px solid #EAEAEA;
+        background: #fff; }
+  .user-contain .product {
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; }
+    .user-contain .product .product-ul {
+      margin-right: -20px; }
+      .user-contain .product .product-ul .product-list {
+        width: 224px;
+        float: left;
+        position: relative;
+        cursor: pointer;
+        margin: 0 20px 20px 0; }
+        .user-contain .product .product-ul .product-list .img-size {
+          position: relative;
+          width: 224px;
+          height: 340px;
+          box-shadow: 2px 3px 2px #333333;
+          border: 1px solid #C5C5C5;
+          overflow: hidden; }
+          .user-contain .product .product-ul .product-list .img-size > img {
+            position: absolute; }
+        .user-contain .product .product-ul .product-list .product-info {
+          width: 224px;
+          margin-top: 5px;
+          height: 30px;
+          line-height: 30px; }
+          .user-contain .product .product-ul .product-list .product-info .aprice {
+            color: #ff3366; }
+            .user-contain .product .product-ul .product-list .product-info .aprice > em {
+              font-style: normal;
+              font-size: 16px; }
+            .user-contain .product .product-ul .product-list .product-info .aprice > span {
+              font-size: 16px; }
+          .user-contain .product .product-ul .product-list .product-info .f1 {
+            float: left; }
+          .user-contain .product .product-ul .product-list .product-info .fr {
+            float: right; }
+            .user-contain .product .product-ul .product-list .product-info .fr .fav-i {
+              width: 13px;
+              height: 12px;
+              display: inline-block;
+              background: url(../img/i.png) 0 -304px; }
+        .user-contain .product .product-ul .product-list .text-link {
+          color: #666;
+          width: 224px;
+          display: block;
+          height: 16px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+
+.page-nav {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px; }
+  .page-nav > a {
+    display: inline-block;
+    margin: 0 1px;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    white-space: nowrap;
+    color: #333;
+    background-color: #fff;
+    font-size: 14px; }
+  .page-nav .pagePrev, .page-nav .pagenext {
+    width: auto;
+    height: 30px;
+    padding: 0 13px;
+    font-weight: normal; }
+  .page-nav .currentpage, .page-nav .currentpage:hover {
+    background-color: #f36;
+    border: 1px solid #f36;
+    color: #fff; }
+
+.biu-sidebar {
+  width: 38px;
+  height: 100%;
+  border-left: 1px solid #ddd;
+  background-color: #F6F6F6;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999; }
+  .biu-sidebar .biu-options {
+    position: absolute;
+    top: 62px;
+    border-top: 1px solid #ddd; }
+    .biu-sidebar .biu-options .biu-download:hover .mls-qrcode {
+      display: block; }
+    .biu-sidebar .biu-options .biu-download {
+      border-bottom: 1px solid #ddd;
+      line-height: 1.2;
+      height: 70px;
+      width: 20px;
+      background: url(../img/aside-downoad.png) no-repeat 13px 10px;
+      position: relative;
+      padding-top: 40px;
+      padding-left: 10px;
+      font-size: 14px; }
+      .biu-sidebar .biu-options .biu-download > span {
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-left: -4px;
+        margin-top: 5px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -moz-transform: rotate(90deg); }
+      .biu-sidebar .biu-options .biu-download .mls-qrcode {
+        width: 140px;
+        height: 140px;
+        padding: 13px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        position: absolute;
+        right: 30px;
+        top: 0;
+        display: none; }
+        .biu-sidebar .biu-options .biu-download .mls-qrcode > img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 0;
+          top: 0; }
+    .biu-sidebar .biu-options .biu-cart {
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      line-height: 1.2; }
+      .biu-sidebar .biu-options .biu-cart > a {
+        height: 61px;
+        background: url(../img/aside-cart.png) no-repeat 10px 9px;
+        display: block;
+        width: 10px;
+        padding-top: 36px;
+        padding-right: 14px;
+        padding-left: 14px;
+        cursor: pointer;
+        line-height: 1.2;
+        font-size: 14px; }
+    .biu-sidebar .biu-options .biu-service {
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      line-height: 1.2; }
+      .biu-sidebar .biu-options .biu-service > a {
+        height: 52px;
+        background: url(../img/aside-service.png) no-repeat 11px 15px;
+        display: block;
+        width: 10px;
+        padding-top: 36px;
+        padding-right: 14px;
+        padding-left: 14px;
+        cursor: pointer;
+        line-height: 1.2;
+        font-size: 14px; }
+    .biu-sidebar .biu-options .biu-coupon {
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      line-height: 1.2; }
+      .biu-sidebar .biu-options .biu-coupon > a {
+        height: 56px;
+        background: url(../img/aside-coupon.png) no-repeat 10px 15px;
+        display: block;
+        width: 10px;
+        padding-top: 36px;
+        padding-right: 14px;
+        padding-left: 14px;
+        cursor: pointer;
+        line-height: 1.2;
+        font-size: 14px; }
+    .biu-sidebar .biu-options .biu-mark {
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      line-height: 1.2; }
+      .biu-sidebar .biu-options .biu-mark > a {
+        height: 46px;
+        background: url(../img/biu-mark.png) no-repeat 10px 15px;
+        display: block;
+        width: 10px;
+        padding-top: 41px;
+        padding-right: 14px;
+        padding-left: 14px;
+        cursor: pointer;
+        line-height: 1.2;
+        font-size: 14px; }
+    .biu-sidebar .biu-options .biu-footprint {
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      line-height: 1.2; }
+      .biu-sidebar .biu-options .biu-footprint > a {
+        height: 49px;
+        background: url(../img/biu-mark.png) no-repeat 12px 15px;
+        display: block;
+        width: 10px;
+        padding-top: 41px;
+        padding-right: 14px;
+        padding-left: 14px;
+        cursor: pointer;
+        line-height: 1.2;
+        font-size: 14px; }
+  .biu-sidebar .biu-gotop {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 38px;
+    height: 40px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+    display: none;
+    background: #F8F8F8 url(../img/biu-gotop.png) no-repeat 12px 16px; }
+
+/*# sourceMappingURL=detail-main.css.map */

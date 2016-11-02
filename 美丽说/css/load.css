@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+input {
+  resize: none;
+  outline: none;
+  font-family: Arial;
+  word-wrap: break-word; }
+
+.main {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+  .main > h1 {
+    padding-top: 40px;
+    padding-bottom: 30px; }
+    .main > h1 > img {
+      border: none;
+      display: block; }
+  .main .content {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 80px;
+    overflow: hidden; }
+    .main .content .left-side {
+      float: left; }
+    .main .content .right-side {
+      width: 322px;
+      float: right;
+      padding-left: 40px;
+      padding-bottom: 30px;
+      border: 1px solid #dcdcdc; }
+      .main .content .right-side .title {
+        font-size: 14px;
+        color: #666;
+        line-height: 56px;
+        border-bottom: 1px solid #dcdcdc;
+        margin-left: -40px;
+        text-indent: 40px;
+        font-weight: bold; }
+      .main .content .right-side .register {
+        float: right;
+        text-decoration: underline;
+        font-size: 12px;
+        font-weight: normal;
+        margin-right: 40px; }
+      .main .content .right-side .form {
+        padding-right: 40px; }
+        .main .content .right-side .form > p {
+          background: url(../img/err-tips.png) 12px no-repeat #fffff8;
+          border: 1px solid #ffd797;
+          line-height: 20px;
+          font-size: 12px;
+          color: #ff5783;
+          width: 240px;
+          height: 20px;
+          padding-left: 40px;
+          margin-bottom: 0;
+          margin-top: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: none; }
+        .main .content .right-side .form .item {
+          margin-top: 15px;
+          overflow: hidden; }
+          .main .content .right-side .form .item .phone {
+            width: 100%;
+            box-sizing: border-box;
+            height: 30px;
+            line-height: 30px; }
+          .main .content .right-side .form .item .code {
+            width: 100%;
+            box-sizing: border-box;
+            height: 30px;
+            line-height: 30px; }
+          .main .content .right-side .form .item .submit {
+            background-color: #ff3366;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            border: none;
+            line-height: 36px;
+            cursor: pointer;
+            font-size: 14px; }
+          .main .content .right-side .form .item .forget {
+            color: #ff3366;
+            text-decoration: underline;
+            float: right; }
+        .main .content .right-side .form .ui-input {
+          background: none;
+          border: 1px solid #CFCFCF;
+          height: 28px;
+          line-height: 1;
+          padding: 0 6px 0 0;
+          text-indent: 6px;
+          float: left; }
+        .main .content .right-side .form .img-code {
+          margin-top: 15px;
+          overflow: hidden; }
+          .main .content .right-side .form .img-code > p {
+            font-size: 12px;
+            margin-bottom: 10px; }
+          .main .content .right-side .form .img-code > ul > li {
+            float: left;
+            width: 68px;
+            height: 68px;
+            margin: 1px;
+            cursor: pointer;
+            overflow: hidden;
+            background: url(../img/img-code.jpg) no-repeat; }
+          .main .content .right-side .form .img-code > ul .one {
+            background-position: 0px 0px; }
+          .main .content .right-side .form .img-code > ul .two {
+            background-position: -75px 0px; }
+          .main .content .right-side .form .img-code > ul .three {
+            background-position: -150px 0px; }
+          .main .content .right-side .form .img-code > ul .four {
+            background-position: -225px 0px; }
+      .main .content .right-side .fast-login {
+        margin-top: 20px;
+        border-top: 1px dotted #ccc;
+        margin-right: 40px; }
+        .main .content .right-side .fast-login > h3 {
+          padding-top: 20px;
+          padding-bottom: 15px;
+          font-size: 14px;
+          font-weight: normal; }
+        .main .content .right-side .fast-login .fast-way > a {
+          float: left;
+          width: 86px;
+          height: 35px;
+          background: url("../img/idid_ie4.png") no-repeat; }
+        .main .content .right-side .fast-login .fast-way .qq-way {
+          background-position: -6px -120px; }
+        .main .content .right-side .fast-login .fast-way .sina-way {
+          background-position: -6px -160px;
+          margin-left: 12px;
+          margin-right: 12px; }
+        .main .content .right-side .fast-login .fast-way .weixin-way {
+          background-position: -6px -200px; }
+
+/*# sourceMappingURL=load.css.map */

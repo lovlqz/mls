@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+	</head>
+	<link rel="stylesheet" href="../css/load.css" />
+	<script type="text/javascript" src="../jquery/jquery-1.11.3.js" ></script>
+	<body>
+		<div class="main">
+			<h1>
+				<a href="index.html"><img src="../img/mls-logo.png"/></a>
+			</h1>
+			<div class="content">
+				<div class="left-side">
+					<a href="javascript:;"><img src="../img/idid.jpg"/></a>
+				</div>
+				<div class="right-side">
+					<p class="title">
+						登录美丽说
+						<a class="register" href="load.html">已有账号</a>
+					</p>
+					<form>
+						<div class="form">
+							<p class="err-tips"></p>
+							<div class="item">
+								<input type="text" id="phone1" class="phone ui-input" placeholder="手机号/邮箱/用户名" />
+							</div>
+							<div class="item">
+								<input type="password" id="password1" class="ui-input code" placeholder="密码" />
+							</div>
+							<div class="item">
+								<input type="password" id="password2" class="ui-input code" placeholder="再次输入密码" />
+							</div>
+							<div class="item">
+								<input type="submit" class="submit sub-btn" value="立即注册" />
+							</div>
+							<div class="item" style="font-size: 12px;">
+								<label>
+									<input type="checkbox" name="read" id="remenber" value="1" /><a href="javascript:;">同意美丽说注册条款</a>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer"></footer>
+	</body>
+</html>
+ <script>
+ 	//foot的load
+ 	$(".footer").load("footer.html");
+ </script>
+ 
+ //验证信息
+ <script type="text/javascript" src="../js/cookie.js" ></script>
+ <script type="text/javascript">
+		$("#phone1").blur(function(){
+			var cook=getCookie("username_"+$(this).val());
+			console.log(cook)
+			if(cook==""){
+				if(!isNaN($(this).val()))//是纯数字检查手机
+				{
+					isnum($(this));
+				}else{
+					$(".form .err-tips").css({"display":"block"});
+					$(".err-tips").html("手机号必须是数字！");
+				}
+			}else if($(this).val().length!=0){
+				$(".form .err-tips").css({"display":"block"});
+				$(".err-tips").html("手机号已被注册！");
+			}else{
+				$(".form .err-tips").css({"display":"block"});
+				$(".err-tips").html("请输入手机号！");
+			}
+		});
+		
+		//电话号码验证
+	    function isnum(obj)
+	    {
+	    	var reg=/^1[34578]\d{9}$/;
+	    	if(!reg.test(obj.val()))
+	    	{
+	    		$(".form .err-tips").css({"display":"block"});
+	        	$(".err-tips").html("请正确填写手机号！");
+	        	obj.css({"border":"1px solid #e5e5e5"})
+	    	}
+	    	else
+	    	{
+	    		$(".form .err-tips").css({"display":"none"});
+	    		$(".err-tips").html(" ");
+	    		obj.css({"border":"1px solid #7bdea7"})
+	    	}
+	    }
+       
+    
+		//密码的验证
+		$("#password1").blur(function(){
+			var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/;
+			if(reg.test($(this).val()))
+			{
+				$(".form .err-tips").css({"display":"none"});
+				$(".err-tips").html(" ")
+				$(this).css({"border":"1px solid #7bdea7"})
+			}
+			else
+			{
+				$(".form .err-tips").css({"display":"block"});
+				$(".err-tips").html("密码格式不正确");
+		        $(this).css({"border":"1px solid #f03468"});
+			}
+		});
+		$("#password2").blur(function(){
+			if($("#password1").val()!=$("#password2").val()){
+				$(".form .err-tips").css({"display":"block"});
+				$(".err-tips").html("两次密码输入不一致");
+			}else{
+				$(".form .err-tips").css({"display":"none"});
+				$(".err-tips").html(" ")
+				$(this).css({"border":"1px solid #7bdea7"})
+			}
+		});
+
+	//点击注册
+		$(".sub-btn").eq(0).click(function(){	
+			if( $("#phone1").val().length==0||
+				$("#password1").val().length==0||
+				$("#password2").val().length==0||
+				$("#remenber").prop("checked")==false)
+			{
+				$(".form .err-tips").css({"display":"block"});
+				$(".err-tips").html("所有信息必须全部填写完整之后才能注册");
+			}else{
+				$(".err-tips").html(" ");
+				$(".form .err-tips").css({"display":"none"});
+				setCookie("username_"+$("#phone1").val(),$("#phone1").val(),60);
+				setCookie("pwd_"+$("#password1").val(),$("#password1").val(),60);
+				window.location.href="load.html"
+//				window.close("register.html")
+//				window.open("load.html");
+			} 
+		})
+	</script>	

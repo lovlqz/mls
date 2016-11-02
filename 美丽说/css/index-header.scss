@@ -1,0 +1,137 @@
+.asec-nav{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ff3366;
+  margin-bottom: 10px;
+  background-color: #fff; 
+}
+.nav-main{
+    width: 1200px;
+    height: 40px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    >li{
+        float: none;
+        width: auto;
+    }
+    .nav-all{
+        float: left;
+        width: 285px;
+        text-align: center;
+        font-size: 16px;
+        background-color: #ff3366;
+        color: #fff;
+        margin-left: 0;
+        margin-right: 40px;
+        position: relative;
+        .attr-box{
+            display: none;
+            width: 285px;
+            position: absolute;
+            left: 0;
+            top: 41px;
+            z-index: 99;
+            .sec-box{
+                background-color: #FFF;
+                border: 1px solid #ff3366;
+                float: left;
+                width: 263px;
+                border-top: 0;
+                padding-right: 20px;
+                .sec-list{
+                    position: relative;
+                    margin-left: 20px;
+                    border-bottom: 1px dashed #ccc;
+                    .list-count{
+                        position: relative;
+                        z-index: 8;
+                        width: 263px;
+                        height: 41.5px;
+                        line-height: 41.5px;
+                        overflow: hidden;
+                        .nav-tel{
+                            width: 29px;
+                            overflow: hidden;
+                            font-size: 14px;
+                            float: left;
+                            margin-right: 20px;
+                            font-weight: normal;
+                        }
+                        .list-p{
+                            width: 180px;
+                            overflow: hidden;
+                            float: left;
+                            font-size: 12px;
+                            color: #666;
+                            >a{
+                                float: left;
+                                margin-right: 10px;
+                            }
+                            .red{
+                                color: #FF3366;
+                            }
+                        }
+                        .corner{
+                            font-size: 14px;
+                            color: #999;
+                            float: right;
+                            margin-right: 20px;
+                        }
+                    }
+                    .nav-list{
+                        display: none;
+                        border: 1px solid #ff3366;
+                        background-color: #FFF;
+                        padding-left: 20px;
+                        width: 238px;
+                        z-index: 4;
+                        padding-bottom: 10px;
+                        position: absolute;
+                        top: -1px;
+                        right: -279px;
+                        >li{
+                            float: none;
+                            width: 180px;
+                        }
+                        >h4{
+                            font-size: 14px;
+                            height: 20px;
+                            line-height: 20px;
+                            padding-top: 12px;
+                            padding-bottom: 6px;
+                            text-align: left;
+                            font-weight: normal;
+                        }
+                        >p{
+                            line-height: 24px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            width: 100%;
+                            font-size: 12px;
+                            color: #666;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                .sec-last{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .nav-tab{
+        float: left;
+        margin: 0 40px;
+        >a{
+            font-size: 16px;
+        }
+        a:hover{
+            color:#FF3366
+        }
+        .active{
+            color: #ff3366;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    resize: none;
+    outline: none;
+    font-family: Arial;
+    word-wrap: break-word;
+}
+.main{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    >h1{
+        padding-top: 40px;
+        padding-bottom: 30px;
+        >img{
+            border: none;
+            display: block;
+        }
+    }
+    .content{
+        background-color: #fff;
+        padding: 40px;
+        margin-bottom: 80px;
+        overflow: hidden;
+        .left-side{
+            float: left;
+        }
+        .right-side{
+            width: 322px;
+            float: right;
+            padding-left: 40px;
+            padding-bottom: 30px;
+            border: 1px solid #dcdcdc;
+            .title{
+                font-size: 14px;
+                color: #666;
+                line-height: 56px;
+                border-bottom: 1px solid #dcdcdc;
+                margin-left: -40px;
+                text-indent: 40px;
+                font-weight: bold;
+            }
+            .register{
+                float: right;
+                text-decoration: underline;
+                font-size: 12px;
+                font-weight: normal;
+                margin-right: 40px;
+            }
+            .form{
+                padding-right: 40px;
+                >p{
+                    background: url(../img/err-tips.png) 12px no-repeat #fffff8;
+                    border: 1px solid #ffd797;
+                    line-height: 20px;
+                    font-size: 12px;
+                    color: #ff5783;
+                    width: 240px;
+                    height: 20px;
+                    padding-left: 40px;
+                    margin-bottom: 0;
+                    margin-top: 30px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: none;
+                }
+                .item{
+                    margin-top: 15px;
+                    overflow: hidden;
+                    .phone{
+                        width: 100%;
+                        box-sizing: border-box;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    .code{
+                        width: 100%;
+                        box-sizing: border-box;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    .submit{
+                        background-color: #ff3366;
+                        color: #fff;
+                        text-align: center;
+                        width: 100%;
+                        border: none;
+                        line-height: 36px;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                    .forget{
+                            color: #ff3366;
+                            text-decoration: underline;
+                            float: right;
+                    }
+                }
+                .ui-input{
+                    background: none;
+                    border: 1px solid #CFCFCF;
+                    height: 28px;
+                    line-height: 1;
+                    padding: 0 6px 0 0;
+                    text-indent: 6px;
+                    float: left;
+                }
+                .img-code{
+                    //display: none;
+                    margin-top: 15px;
+                    overflow: hidden;
+                    >p{
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                    >ul{
+                        >li{
+                            float: left;
+                            width: 68px;
+                            height: 68px;
+                            margin: 1px;
+                            cursor: pointer;
+                            overflow: hidden;
+                            background: url(../img/img-code.jpg) no-repeat;
+                        }
+                        .one{
+                            background-position: 0px 0px;
+                        }
+                        .two{
+                            background-position: -75px 0px;
+                        }
+                        .three{
+                            background-position: -150px 0px;
+                        }
+                        .four{
+                            background-position: -225px 0px;
+                        }
+                    } 
+                }
+            }
+            .fast-login{
+                margin-top: 20px;
+                border-top: 1px dotted #ccc;
+                margin-right: 40px;
+                >h3{
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+                .fast-way{
+                    >a{
+                        float: left;
+                        width: 86px;
+                        height: 35px;
+                        background: url("../img/idid_ie4.png") no-repeat;
+                     }
+                    .qq-way{
+                        background-position: -6px -120px;
+                    }
+                    .sina-way{
+                        background-position: -6px -160px;
+                        margin-left: 12px;
+                        margin-right: 12px;
+                    }
+                    .weixin-way{
+                        background-position: -6px -200px;
+                    }
+                }
+            }
+        }
+    }
+}

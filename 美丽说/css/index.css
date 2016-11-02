@@ -1,0 +1,231 @@
+.main-con .top-wrap {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .main-con .top-wrap .top-banner {
+    width: 896px;
+    margin: 15px -5px 0 304px;
+    box-shadow: 5px 5px 3px #333333;
+    overflow: hidden;
+    position: relative;
+    height: 447px; }
+    .main-con .top-wrap .top-banner .banner-con {
+      width: 896px;
+      height: 447px; }
+      .main-con .top-wrap .top-banner .banner-con .banner-con-list {
+        position: absolute; }
+        .main-con .top-wrap .top-banner .banner-con .banner-con-list img {
+          width: 896px;
+          height: 447px; }
+    .main-con .top-wrap .top-banner .banner-nav {
+      width: 200px;
+      height: 30px;
+      position: relative;
+      z-index: 999;
+      left: 40%;
+      top: -50px; }
+      .main-con .top-wrap .top-banner .banner-nav .banner-select {
+        background: #F5F5F5; }
+      .main-con .top-wrap .top-banner .banner-nav > li {
+        float: left;
+        margin-right: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #999; }
+  .main-con .top-wrap .top-ad-box {
+    width: 100%;
+    height: 285px;
+    overflow: hidden;
+    margin-top: 20px; }
+    .main-con .top-wrap .top-ad-box > li {
+      float: left;
+      width: 285px;
+      height: 285px;
+      overflow: hidden;
+      margin-right: 20px; }
+      .main-con .top-wrap .top-ad-box > li > img {
+        width: 285px;
+        display: block; }
+    .main-con .top-wrap .top-ad-box .mr0 {
+      float: right;
+      margin-right: 0; }
+  .main-con .top-wrap h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  .main-con .top-wrap .brand-wrap {
+    width: 1200px;
+    height: 589px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; }
+    .main-con .top-wrap .brand-wrap .brand-box {
+      width: 283px;
+      height: 589px;
+      float: left;
+      margin-right: 20px; }
+      .main-con .top-wrap .brand-wrap .brand-box .sad-up {
+        width: 283px;
+        height: 297px;
+        overflow: hidden; }
+      .main-con .top-wrap .brand-wrap .brand-box .sad-1 .sad-list {
+        float: left;
+        width: 140px;
+        height: 96px;
+        overflow: hidden;
+        border: 1px solid #eee;
+        margin: -1px -1px -1px 0; }
+        .main-con .top-wrap .brand-wrap .brand-box .sad-1 .sad-list > img {
+          display: block;
+          width: 140px; }
+    .main-con .top-wrap .brand-wrap .show-one {
+      width: 305px;
+      height: 589px;
+      overflow: hidden;
+      float: left; }
+      .main-con .top-wrap .brand-wrap .show-one > a {
+        display: block; }
+        .main-con .top-wrap .brand-wrap .show-one > a > img {
+          width: 305px;
+          display: block; }
+    .main-con .top-wrap .brand-wrap .sad-r {
+      float: right;
+      width: 592px;
+      height: 589px;
+      overflow: hidden; }
+      .main-con .top-wrap .brand-wrap .sad-r > a {
+        display: block;
+        float: left;
+        width: 294px;
+        height: 293px;
+        overflow: hidden;
+        border: 1px solid #eee;
+        margin: 0 -1px -1px 0; }
+        .main-con .top-wrap .brand-wrap .sad-r > a > img {
+          width: 294px;
+          display: block; }
+  .main-con .top-wrap .forputin .common-box {
+    width: 1200px;
+    height: 525px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; }
+    .main-con .top-wrap .forputin .common-box .sad-t {
+      width: 100%;
+      height: 284px;
+      overflow: hidden; }
+      .main-con .top-wrap .forputin .common-box .sad-t > a {
+        float: left; }
+      .main-con .top-wrap .forputin .common-box .sad-t .ad1 {
+        width: 590px;
+        height: 284px;
+        overflow: hidden; }
+      .main-con .top-wrap .forputin .common-box .sad-t .ad2 {
+        width: 184px;
+        height: 284px;
+        margin-left: 19px;
+        overflow: hidden; }
+    .main-con .top-wrap .forputin .common-box .sad-b {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      margin-top: 20px; }
+      .main-con .top-wrap .forputin .common-box .sad-b .sad-3 {
+        width: 285px;
+        height: 220px;
+        overflow: hidden;
+        margin-left: 20px;
+        float: left; }
+      .main-con .top-wrap .forputin .common-box .sad-b .sad-attr-box {
+        float: left;
+        width: 245px;
+        height: 200px;
+        overflow: hidden;
+        background-color: #F9F9F9;
+        padding: 10px 20px; }
+        .main-con .top-wrap .forputin .common-box .sad-b .sad-attr-box > a {
+          float: left;
+          width: 81px;
+          height: 20px;
+          line-height: 20px;
+          overflow: hidden;
+          text-align: left;
+          font-size: 14px;
+          color: #333;
+          margin: 10px 0; }
+        .main-con .top-wrap .forputin .common-box .sad-b .sad-attr-box a:hover {
+          color: #FF3366; }
+.main-con .now-popular {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .main-con .now-popular .popular-poster {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+    .main-con .now-popular .popular-poster .title-box {
+      font-size: 26px;
+      font-weight: bolder;
+      color: #333; }
+    .main-con .now-popular .popular-poster .line {
+      width: 28px;
+      height: 10px;
+      border-bottom: 2px solid #999;
+      margin-left: auto;
+      margin-right: auto; }
+  .main-con .now-popular .popular-product {
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; }
+    .main-con .now-popular .popular-product .product-ul {
+      margin-right: -20px; }
+      .main-con .now-popular .popular-product .product-ul .product-list {
+        width: 224px;
+        float: left;
+        position: relative;
+        cursor: pointer;
+        margin: 0 20px 20px 0; }
+        .main-con .now-popular .popular-product .product-ul .product-list .img-size {
+          position: relative;
+          width: 224px;
+          height: 340px;
+          box-shadow: 2px 3px 2px #333333;
+          border: 1px solid #C5C5C5;
+          overflow: hidden; }
+          .main-con .now-popular .popular-product .product-ul .product-list .img-size > img {
+            position: absolute; }
+        .main-con .now-popular .popular-product .product-ul .product-list .product-info {
+          width: 224px;
+          margin-top: 5px;
+          height: 30px;
+          line-height: 30px; }
+          .main-con .now-popular .popular-product .product-ul .product-list .product-info .aprice {
+            color: #ff3366; }
+            .main-con .now-popular .popular-product .product-ul .product-list .product-info .aprice > em {
+              font-style: normal;
+              font-size: 16px; }
+            .main-con .now-popular .popular-product .product-ul .product-list .product-info .aprice > span {
+              font-size: 16px; }
+          .main-con .now-popular .popular-product .product-ul .product-list .product-info .f1 {
+            float: left; }
+          .main-con .now-popular .popular-product .product-ul .product-list .product-info .fr {
+            float: right; }
+            .main-con .now-popular .popular-product .product-ul .product-list .product-info .fr .fav-i {
+              width: 13px;
+              height: 12px;
+              display: inline-block;
+              background: url(../img/i.png) 0 -304px; }
+        .main-con .now-popular .popular-product .product-ul .product-list .text-link {
+          color: #666;
+          width: 224px;
+          display: block;
+          height: 16px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+
+/*# sourceMappingURL=index.css.map */

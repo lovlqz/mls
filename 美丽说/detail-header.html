@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/detail-header.css" type="text/css" />
+	</head>
+	<body>
+		<div class="com-topbar">
+			<div class="inner">
+				<ul>
+					<li class="homepage">
+						<a class="index" href="index.html">
+							<em></em>
+							返回首页
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<em class="weixin-load"></em>
+						    微信登录
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<em class="qq-load"></em>
+						    QQ登录
+						</a>
+					</li>
+					<li>
+						<a href="load.html">登录</a>
+					</li>
+					<li>
+						<a href="register.html">注册</a>
+					</li>
+					<li class="mydrop">
+						<a href="javascript:;">
+							<em class="my-collect"></em>
+						    我的收藏
+						</a>
+						<ul class="my-down">
+							<li><a href="javascript:;">收藏宝贝</a></li>
+							<li><a href="javascript:;">收藏店铺</a></li>
+						</ul>
+					</li>
+					<li class="mydrop car-wrap">
+						<a href="javascript:;">
+							<em class="my-shoppingcar"></em>
+						    我的购物车
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<em class="my-order"></em>
+						    我的订单
+						</a>
+					</li>
+					<li class="mydrop">
+						<a href="javascript:;">
+						    帮助中心
+						 <em class="my-arrow"></em>
+						</a>
+						<ul class="my-down">
+							<li><a href="javascript:;">买家服务</a></li>
+							<li><a href="javascript:;">商家服务</a></li>
+							<li><a href="javascript:;">规则中心</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="register.html">商家后台</a>
+					</li>
+			</ul>
+			</div>
+		</div>
+		<div class="com-search">
+			<div class="inner">
+				<a href="index.html">
+					<a href="index.html" class="logo">
+						<img src="img/mls-logo.png"/>
+					</a>
+				</a>
+				<div class="search">
+					<div class="search-tab">
+						<span class="active">店铺</span>
+						<span>宝贝</span>
+					</div>
+					<div class="search-box">
+						<input class="search-text" type="text" placeholder="毛衣大集合" />
+						<span class="search-button"></span>
+						<div class="search-suggest"></div>
+					</div>
+					<div class="hot-word">
+						<a href="javascript:;" style="color: #666666;">套装</a>
+						<a href="javascript:;" style="color: #666666;">针织衫</a>
+						<a href="javascript:;" style="color: #666666;">卫衣</a>
+						<a href="javascript:;" style="color: #ff3366;">外套</a>
+						<a href="javascript:;" style="color: #666666;">连衣裙</a>
+						<a href="javascript:;" style="color: #ff3366;">短靴</a>
+						<a href="javascript:;" style="color: #666666;">睡衣</a>
+						<a href="javascript:;" style="color: #ff3366;">小白鞋</a>
+						<a href="javascript:;" style="color: #666666;">运动鞋</a>
+						<a href="javascript:;" style="color: #ff3366;">双肩包</a>
+						<a href="javascript:;" style="color: #666666;">风衣</a>
+						<a href="javascript:;" style="color: #666666;">大衣</a>
+						<a href="javascript:;" style="color: #666666;">高跟鞋</a>
+						<a href="javascript:;" style="color: #ff3366;">口红</a>
+					</div>
+				</div>
+				<a class="spread" href="javascript:;">
+					<img src="img/spread1.gif"/>
+				</a>
+			</div>
+		</div>
+		<div class="sec-nav">
+			<ul>
+				<div class="at"></div>
+				<li>
+					<a class="active" href="javascript:;">上衣</a>
+				</li>
+				<li>
+					<a href="javascript:;">裙子</a>
+				</li>
+				<li>
+					<a href="javascript:;">裤子</a>
+				</li>
+				<li>
+					<a href="javascript:;">女鞋</a>
+				</li>
+				<li>
+					<a href="javascript:;">包包</a>
+				</li>
+				<li>
+					<a href="javascript:;">配饰</a>
+				</li>
+				<li>
+					<a href="javascript:;">美妆</a>
+				</li>
+				<li>
+					<a href="javascript:;">内衣</a>
+				</li>
+				<li>
+					<a href="javascript:;">男友</a>
+				</li>
+				<li>
+					<a href="javascript:;">童装</a>
+				</li>
+				<li>
+					<a href="javascript:;">家具</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript" src="jquery/jquery-1.11.3.js" ></script>
+<script>
+	//鼠标放上去时让topbar里面的mt-down显示出来
+	$(".mydrop").mouseover(function(){
+	  $(this).find(".my-down").css({"display":"block"})
+	}).mouseout(function(){
+	  $(this).find(".my-down").css({"display":"none"})
+	})
+	
+	//search里面店铺和宝贝切换
+	$(".search-tab span").click(function(){
+		$(this).addClass("active").siblings().removeClass("active")
+	})
+	
+	//鼠标放在sec-nav里面的li上下面有个下划线跟着走
+	$(".sec-nav ul li").mouseover(function(){
+		var index=$(this).index();
+		$(this).find("a").addClass("active").parent().siblings().find("a").removeClass("active");
+		$(".at").stop().animate({"left":(index-1)*$(this).width()})
+	})
+</script>

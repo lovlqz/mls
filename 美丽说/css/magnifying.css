@@ -1,0 +1,919 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+.top-bar {
+  height: 31px;
+  margin-bottom: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-size: 12px; }
+  .top-bar .top-wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .top-bar .top-wrap .backhome {
+      background: url(../img/obackhome.png) no-repeat 0 -5px;
+      padding: 0 20px;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      vertical-align: top;
+      margin-left: 20px; }
+    .top-bar .top-wrap .header-top {
+      float: right; }
+      .top-bar .top-wrap .header-top .s1 {
+        display: inline;
+        position: relative;
+        z-index: 100;
+        float: left;
+        margin: 0 15px 0 0;
+        height: 31px; }
+        .top-bar .top-wrap .header-top .s1 > a {
+          float: left;
+          overflow: hidden;
+          margin-top: 8px;
+          color: #666;
+          line-height: 14px; }
+      .top-bar .top-wrap .header-top .ext-mode {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        padding-left: 15px;
+        top: 100%;
+        background: #fff;
+        border: 1px solid #eee;
+        border-top: none;
+        border-radius: 0 0 3px 3px; }
+        .top-bar .top-wrap .header-top .ext-mode .s2 {
+          margin-bottom: 2px;
+          line-height: 25px;
+          text-align: center; }
+      .top-bar .top-wrap .header-top .has-icon:hover .ext-mode {
+        display: block; }
+      .top-bar .top-wrap .header-top .my-order {
+        background: url(../img/upload1.png) no-repeat;
+        background-position: 20px -212px; }
+      .top-bar .top-wrap .header-top .shop-cart-v2 {
+        background: url(../img/upload1.png) no-repeat;
+        background-position: 12px -104px; }
+        .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info {
+          display: none;
+          position: absolute;
+          top: 31px;
+          width: 250px;
+          padding: 15px;
+          background: #FFF;
+          border-radius: 0 0 5px 5px;
+          border: 1px solid #eee; }
+          .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 {
+            overflow: hidden;
+            position: relative; }
+            .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 > li {
+              position: relative;
+              vertical-align: middle;
+              line-height: 22px;
+              padding: 0 50px;
+              margin-bottom: 12px;
+              height: 40px; }
+              .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 > li .imgbox {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                overflow: hidden; }
+              .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 > li .title {
+                display: block;
+                color: #333;
+                width: 150px;
+                height: 20px;
+                line-height: 20px;
+                overflow: hidden; }
+              .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 > li .info {
+                display: block;
+                width: 150px;
+                height: 20px;
+                overflow: hidden;
+                font-weight: 400;
+                color: #999; }
+              .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 > li .price {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #666; }
+              .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 > li .del {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: #999;
+                cursor: pointer;
+                font-weight: 400; }
+            .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 .subbox {
+              border-top: 1px solid #ddd;
+              color: #333;
+              padding: 15px 0 0;
+              line-height: 24px;
+              height: 24px; }
+              .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 .subbox .fr {
+                float: right; }
+                .top-bar .top-wrap .header-top .shop-cart-v2 .shop-cart-info .max-height-ie6 .subbox .fr .goel {
+                  float: left;
+                  overflow: hidden;
+                  height: 22px;
+                  line-height: 22px;
+                  padding: 0 10px;
+                  text-align: center;
+                  color: #fff;
+                  background: #f46;
+                  border-radius: 4px;
+                  font-weight: 700; }
+      .top-bar .top-wrap .header-top .has-line > a {
+        padding-left: 35px;
+        border-left: 1px solid #ddd; }
+      .top-bar .top-wrap .header-top .has-line .icon-delta {
+        position: absolute;
+        width: 7px;
+        height: 5px;
+        top: 14px;
+        right: 0;
+        background: url(../img/icon-delta.png) 0 0; }
+      .top-bar .top-wrap .header-top .has-line .cart-info-wrap {
+        position: relative;
+        z-index: 10;
+        display: inline-block; }
+        .top-bar .top-wrap .header-top .has-line .cart-info-wrap .cart-info {
+          display: inline-block;
+          color: #333;
+          cursor: pointer; }
+      .top-bar .top-wrap .header-top .has-icon {
+        padding-right: 10px; }
+
+.shop-header {
+  height: 70px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd; }
+  .shop-header .head {
+    width: 1200px;
+    margin: auto; }
+    .shop-header .head .userinfo {
+      float: left;
+      position: relative;
+      width: 507px;
+      height: 70px; }
+      .shop-header .head .userinfo .avatar {
+        float: left;
+        margin-left: 20px; }
+        .shop-header .head .userinfo .avatar .face {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-top: 15px; }
+      .shop-header .head .userinfo .shopname {
+        padding-left: 10px;
+        margin-top: 10px;
+        width: 240px; }
+        .shop-header .head .userinfo .shopname .namewrap {
+          font-size: 14px;
+          overflow: hidden;
+          height: 20px;
+          line-height: 20px;
+          display: block;
+          font-weight: 400; }
+          .shop-header .head .userinfo .shopname .namewrap .namef {
+            float: left;
+            padding-left: 10px;
+            margin-right: 5px;
+            display: inline-block;
+            max-width: 130px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            color: #333;
+            white-space: nowrap;
+            word-break: break-all; }
+        .shop-header .head .userinfo .shopname .shopscore {
+          position: relative;
+          top: 15px;
+          left: 10px;
+          _display: inline;
+          width: 310px;
+          z-index: 20;
+          padding-bottom: 30px; }
+          .shop-header .head .userinfo .shopname .shopscore > p .s-cart {
+            color: #666;
+            margin-right: 5px; }
+            .shop-header .head .userinfo .shopname .shopscore > p .s-cart > b {
+              color: #ef2f23;
+              font-weight: 400;
+              padding-left: 2px; }
+          .shop-header .head .userinfo .shopname .shopscore .shop-info {
+            display: none;
+            position: absolute;
+            top: 36px;
+            left: -20px;
+            width: 505px;
+            background-color: #f6f6f6;
+            border: 1px solid #ededed;
+            border-top: 0; }
+            .shop-header .head .userinfo .shopname .shopscore .shop-info .shop-info-content > ol {
+              float: left;
+              overflow: hidden; }
+            .shop-header .head .userinfo .shopname .shopscore .shop-info .shop-info-content .info-box {
+              float: left;
+              width: 220px;
+              min-height: 250px;
+              overflow: hidden;
+              border-right: 1px solid #dedede; }
+            .shop-header .head .userinfo .shopname .shopscore .shop-info .shop-info-content .li1 {
+              width: 150px;
+              margin: 0 0 5px 15px; }
+            .shop-header .head .userinfo .shopname .shopscore .shop-info .shop-info-content .li2 {
+              width: 80px; }
+            .shop-header .head .userinfo .shopname .shopscore .shop-info .shop-info-content .li4 {
+              padding: 5px 0;
+              width: 150px;
+              margin-left: 15px;
+              border-top: 1px dashed #dedede; }
+            .shop-header .head .userinfo .shopname .shopscore .shop-info .shop-info-content .li5 {
+              padding: 5px 0;
+              width: 70px;
+              border-top: 1px dashed #dedede; }
+      .shop-header .head .userinfo .shopname:hover .shop-info {
+        display: block; }
+      .shop-header .head .userinfo .shop-action {
+        margin-top: 24px;
+        position: relative;
+        top: -65px;
+        left: 330px; }
+        .shop-header .head .userinfo .shop-action > a {
+          display: inline-block; }
+        .shop-header .head .userinfo .shop-action .shop-follow {
+          background: url(../img/jiadian.png);
+          padding: 0 12px 0 22px !important;
+          background-position: 4px -48px;
+          font-size: 12px;
+          color: #666;
+          height: 20px;
+          line-height: 20px;
+          background-color: #fff; }
+        .shop-header .head .userinfo .shop-action .chart {
+          border: 1px solid #ddd;
+          height: 20px;
+          line-height: 20px;
+          padding: 0 5px;
+          background-color: #fff; }
+          .shop-header .head .userinfo .shop-action .chart .kefu {
+            line-height: 20px; }
+          .shop-header .head .userinfo .shop-action .chart .mlstalk {
+            background: url(../img/msltalk.gif) no-repeat;
+            display: inline-block;
+            padding-left: 20px;
+            cursor: pointer; }
+      .shop-header .head .userinfo .icon-show-score {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 33px;
+        width: 30px;
+        height: 46px;
+        cursor: pointer;
+        background: url(../img/7ycvj_icon.png) no-repeat 100% 0; }
+      .shop-header .head .userinfo .line-right {
+        float: right;
+        width: 1px;
+        background: #eee;
+        margin-top: -95px;
+        height: 40px;
+        margin-left: 28px; }
+    .shop-header .head .shopsearch {
+      margin: 18px 0 0;
+      padding-left: 24px;
+      float: right; }
+      .shop-header .head .shopsearch .top-nav-search {
+        position: relative;
+        z-index: 50;
+        float: left;
+        width: auto;
+        margin: 0; }
+        .shop-header .head .shopsearch .top-nav-search .text-wrap {
+          position: absolute;
+          left: -100px; }
+          .shop-header .head .shopsearch .top-nav-search .text-wrap .text {
+            outline: none;
+            float: left;
+            background: #fff;
+            vertical-align: middle;
+            width: 400px;
+            height: 26px;
+            overflow: hidden;
+            padding: 0 8px;
+            line-height: 26px;
+            border: 2px solid #ef2f23; }
+          .shop-header .head .shopsearch .top-nav-search .text-wrap .ts-txt {
+            color: #999;
+            font-size: 12px; }
+          .shop-header .head .shopsearch .top-nav-search .text-wrap .search-inshop {
+            vertical-align: middle;
+            background-color: #fff;
+            color: #ef2f23;
+            border: 1px solid #ef2f23;
+            height: 27px;
+            width: 72px;
+            cursor: pointer;
+            display: inline-block;
+            line-height: 28px;
+            text-align: center;
+            float: right;
+            margin-left: 5px;
+            position: absolute;
+            right: -150px; }
+          .shop-header .head .shopsearch .top-nav-search .text-wrap .submit-btn {
+            position: absolute;
+            float: left;
+            outline: none;
+            vertical-align: middle;
+            border: 0;
+            background-color: #ef2f23;
+            color: #fff;
+            height: 29px;
+            width: 72px;
+            cursor: pointer; }
+
+.ovbox .mod-list .topbanner {
+  overflow: hidden;
+  height: 150px; }
+  .ovbox .mod-list .topbanner .shop-bg-img {
+    display: block;
+    height: 150px; }
+
+.white-style {
+  background: rgba(237, 237, 237, 0.75); }
+
+.mod-topNav {
+  margin-top: -30px;
+  position: relative;
+  z-index: 19;
+  overflow: visible; }
+  .mod-topNav .mod-list {
+    overflow: visible;
+    height: 30px;
+    margin-bottom: 20px; }
+    .mod-topNav .mod-list .mod-item {
+      border: none;
+      overflow: visible; }
+      .mod-topNav .mod-list .mod-item .topNav {
+        width: 1200px;
+        margin: 0 auto;
+        line-height: 30px;
+        position: relative; }
+        .mod-topNav .mod-list .mod-item .topNav .category-list {
+          display: none;
+          background: rgba(237, 237, 237, 0.75);
+          position: absolute;
+          top: 30px;
+          left: 68px;
+          width: 150px;
+          line-height: 32px; }
+          .mod-topNav .mod-list .mod-item .topNav .category-list > dl > dd {
+            height: 32px;
+            line-height: 32px;
+            overflow: visible;
+            position: relative; }
+            .mod-topNav .mod-list .mod-item .topNav .category-list > dl > dd > a {
+              display: block;
+              font-size: 12px;
+              background: url(../img/submenu.png) no-repeat 14px 13px;
+              border: none;
+              height: 32px;
+              line-height: 32px;
+              padding: 0 26px; }
+            .mod-topNav .mod-list .mod-item .topNav .category-list > dl > dd > a:hover {
+              background-color: #e4e4e4; }
+        .mod-topNav .mod-list .mod-item .topNav > ol .all > a {
+          padding: 0 38px 0 25px;
+          background: url(../img/uz7_kqz.png) no-repeat 86px -191px; }
+        .mod-topNav .mod-list .mod-item .topNav > ol > li {
+          float: left;
+          position: relative;
+          font-size: 14px;
+          z-index: 2;
+          padding: 7px 0; }
+          .mod-topNav .mod-list .mod-item .topNav > ol > li > a {
+            color: #333;
+            border-right: 1px solid #dcdcdc;
+            display: block;
+            padding: 0 20px;
+            line-height: 16px; }
+
+.shop-detail {
+  width: 1200px;
+  height: 1000px;
+  margin: 0 auto; }
+  .shop-detail .detail-primary {
+    overflow: hidden;
+    margin: 30px 0;
+    min-height: 680px; }
+    .shop-detail .detail-primary .detail-goods {
+      float: left;
+      width: 1058px;
+      z-index: 7;
+      overflow: hidden; }
+      .shop-detail .detail-primary .detail-goods .goods-info {
+        float: left;
+        width: 100%;
+        min-height: 530px; }
+        .shop-detail .detail-primary .detail-goods .goods-info .info-box {
+          padding: 0 90px 25px 431px;
+          overflow: hidden; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-title {
+            font-family: Microsoft YaHei,arial;
+            color: #333;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 24px;
+            line-height: 25px; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap {
+            width: 540px;
+            border-bottom: 1px solid #f3f3f3;
+            border-top: 1px solid #f3f3f3;
+            background: url(../img/goods-prowrap.png) repeat-y;
+            background-position: 0 top; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box {
+              height: 26px; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-type {
+                color: #999;
+                position: absolute;
+                font-size: 12px;
+                height: 32px;
+                line-height: 32px; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-price {
+                padding-left: 60px;
+                text-decoration: line-through;
+                font-size: 14px;
+                color: #999;
+                height: 32px;
+                line-height: 32px; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .price {
+                padding-left: 60px;
+                color: #ef2f23;
+                font-size: 24px;
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: 700; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-extra {
+                padding-left: 0;
+                line-height: 32px;
+                margin-right: 10px;
+                color: #999;
+                float: right; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-extra .mr10 {
+                  margin-right: 10px; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-module {
+                padding-left: 60px;
+                padding-top: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-module .more {
+                  background-image: url(../img/upload_2.png);
+                  background-position: -10px -32px;
+                  background-repeat: no-repeat;
+                  overflow: hidden;
+                  display: block;
+                  float: right;
+                  width: 10px;
+                  height: 6px;
+                  margin-top: 5px;
+                  margin-left: 20px;
+                  cursor: pointer; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-module .favorable-list {
+                  display: none;
+                  position: absolute;
+                  top: 24px;
+                  left: 50px;
+                  border: 1px solid #ddd;
+                  background-color: #fff;
+                  color: #5a5a5a;
+                  padding: 10px;
+                  z-index: 998;
+                  min-width: 220px; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-module .favorable-list .favorable-item {
+                    height: 25px;
+                    width: 100%;
+                    position: relative; }
+                    .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-prowrap .propery-box .propery-module .favorable-list .favorable-item .get-btn {
+                      color: #ef2f23;
+                      cursor: pointer;
+                      margin-right: 10px;
+                      float: right; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-im {
+            width: 540px;
+            min-height: 20px;
+            padding-bottom: 15px;
+            position: relative; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-im .propery-type {
+              color: #999;
+              float: left;
+              font-size: 12px;
+              height: 32px;
+              line-height: 32px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-im .ptype1 {
+              background: url(../img/msltalk.gif) no-repeat 5px;
+              display: inline-block;
+              padding-left: 25px;
+              cursor: pointer; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .getout-car {
+            display: none;
+            background: #fff;
+            border: 1px solid #d2d2d2;
+            width: 500px;
+            height: 120px;
+            position: absolute;
+            z-index: 100;
+            padding: 20px;
+            border-radius: 0 0 5px 5px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .getout-car .giveup {
+              background-image: url(../img/upload_2.png);
+              background-position: -10px -147px;
+              background-repeat: no-repeat;
+              display: block;
+              float: right;
+              width: 23px;
+              height: 23px;
+              margin-right: -15px;
+              margin-top: -15px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .getout-car .zhuan {
+              background: #fff url(../img/waiting.gif) 50% no-repeat;
+              padding: 0 30px;
+              height: 120px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .getout-car .content-car {
+              display: none;
+              padding: 0 30px;
+              height: 120px;
+              background: #fff; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .getout-car .content-car .mac-mb10 {
+                margin-bottom: 10px;
+                text-align: center; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .getout-car .content-car .mac-mb10 .module-cart-icons {
+                  background: url(../img/upload3.png) no-repeat; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .getout-car .content-car .mac-mb10 .mac-success-txt {
+                  background-position: -20px -180px;
+                  height: 30px;
+                  line-height: 32px;
+                  margin-top: 10px;
+                  padding-left: 30px;
+                  display: inline-block;
+                  font-size: 18px;
+                  color: #333; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .getout-car .content-car > p .goto-car {
+                background-color: #ef2f23;
+                background-position: 125px -114px;
+                color: #fff;
+                font-size: 20px;
+                text-align: left;
+                margin-left: 140px;
+                margin-top: 20px;
+                width: 145px;
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+                padding-left: 20px; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .pannel-title {
+            position: relative;
+            top: 5px;
+            left: 1px;
+            width: 537px;
+            text-indent: 10px;
+            background: #f6f6f6;
+            display: none;
+            height: 24px;
+            line-height: 24px;
+            margin-bottom: 10px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .pannel-title .pannel-close {
+              background-image: url(../img/upload_2.png);
+              background-position: -10px -147px;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              display: block;
+              float: right;
+              margin-top: 5px;
+              z-index: 10;
+              height: 18px;
+              width: 18px;
+              cursor: pointer;
+              color: #666;
+              font-size: 18px;
+              font-family: sans-serif; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .pannel-title .choose-goods-info {
+              color: #ef2f23; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice {
+            margin-top: -30px;
+            padding-top: 40px;
+            width: 100%;
+            height: 175px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .goods-box {
+              width: 540px;
+              position: relative; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .goods-box .propery-type {
+                color: #999;
+                float: left;
+                font-size: 12px;
+                height: 32px;
+                line-height: 32px; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .goods-box .ptype2 {
+                padding-left: 60px;
+                position: absolute;
+                top: 0; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .goods-box .ptype2 .style-list {
+                  max-height: 110px;
+                  overflow-y: auto; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .goods-box .ptype2 .style-list > li {
+                    width: 45px;
+                    height: 45px;
+                    margin-left: 20px;
+                    float: left;
+                    padding: 0; }
+                    .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .goods-box .ptype2 .style-list > li > img {
+                      width: 45px;
+                      height: 45px;
+                      vertical-align: middle; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .goods-box .ptype2 .style-list .c {
+                    background: url(../img/eeee_1.png) 100% 100% no-repeat;
+                    border: 2px solid #666;
+                    line-height: 28px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-size {
+              width: 540px;
+              margin-top: 60px;
+              position: relative; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-size .propery-type {
+                color: #999;
+                float: left;
+                font-size: 12px;
+                height: 32px;
+                line-height: 32px; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-size .ptype2 {
+                padding-left: 60px;
+                position: absolute;
+                top: 0; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-size .ptype2 .style-list {
+                  max-height: 110px;
+                  overflow-y: auto; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-size .ptype2 .style-list > li {
+                    cursor: pointer;
+                    float: left;
+                    padding: 0 10px;
+                    margin-left: 5px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    border: 1px solid #ddd;
+                    white-space: nowrap;
+                    word-wrap: normal;
+                    transition-property: border-color; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-size .ptype2 .style-list .c {
+                    background: url(../img/eeee_1.png) 100% 100% no-repeat;
+                    border: 2px solid #666;
+                    line-height: 28px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num {
+              width: 540px;
+              margin-top: 115px;
+              position: relative; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .propery-type {
+                color: #999;
+                float: left;
+                font-size: 12px;
+                height: 32px;
+                line-height: 32px; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 {
+                padding-left: 60px;
+                position: absolute;
+                top: 0; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .goods-num {
+                  position: relative;
+                  width: 95px;
+                  height: 25px;
+                  border: 1px solid #ddd; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .goods-num .num-add, .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .goods-num .num-reduce {
+                    background-image: url(../img/upload_2.png);
+                    background-repeat: no-repeat;
+                    overflow: hidden;
+                    display: block;
+                    float: left;
+                    width: 24px;
+                    height: 25px;
+                    cursor: pointer; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .goods-num .num-reduce {
+                    background-position: -3px 2px; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .goods-num .num-disable {
+                    opacity: .3;
+                    filter: alpha(opacity=30); }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .goods-num .num-add {
+                    background-position: -3px -78px; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .goods-num .num-input {
+                    width: 44px;
+                    text-align: center;
+                    color: #000;
+                    font-size: 14px;
+                    border: 0;
+                    height: 25px;
+                    outline: none;
+                    border-left: 1px solid #ddd;
+                    border-right: 1px solid #ddd;
+                    float: left;
+                    background: none; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .goods-stock {
+                  height: 25px;
+                  line-height: 25px;
+                  margin-left: 10px;
+                  color: #999; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .backchoice .propery-num .ptype2 .f1 {
+                  float: left; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-buy {
+            padding: 25px 0 0 60px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-buy .buy-btn {
+              display: inline-block;
+              text-align: center;
+              font-size: 20px;
+              color: #fff;
+              background: #fff;
+              height: 48px;
+              line-height: 48px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-buy .buy-now {
+              width: 180px;
+              background: #ef2f23;
+              height: 50px;
+              line-height: 50px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-buy .buy-cart {
+              position: relative;
+              color: #333;
+              border: 1px solid #ddd;
+              width: 178px; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-social {
+            margin-left: 65px;
+            margin-top: 10px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-social .fav > b {
+              background-image: url(../img/upload_2.png);
+              background-position: -10px -114px;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              display: block;
+              position: relative;
+              top: 1px;
+              width: 15px;
+              height: 13px;
+              display: inline-block;
+              margin-right: 5px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-social .share > b {
+              background-image: url(../img/upload_2.png);
+              background-position: -9px -56px;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              display: block;
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              margin-right: 5px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-social .share .share-w {
+              position: absolute;
+              width: 108px;
+              height: 45px;
+              background-image: url(../img/upload_2.png);
+              background-position: -10px -509px;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              display: none; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .goods-social .item {
+              padding: 0 13px;
+              height: 24px;
+              line-height: 24px;
+              border: 1px solid #ddd;
+              border-radius: 24px;
+              color: #999;
+              float: left;
+              cursor: pointer;
+              margin-right: 10px; }
+          .shop-detail .detail-primary .detail-goods .goods-info .info-box .extra-serves {
+            padding-top: 30px;
+            width: 600px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .extra-serves .propery-type {
+              color: #999;
+              float: left;
+              font-size: 12px;
+              height: 32px;
+              line-height: 32px; }
+            .shop-detail .detail-primary .detail-goods .goods-info .info-box .extra-serves .list {
+              width: 500px; }
+              .shop-detail .detail-primary .detail-goods .goods-info .info-box .extra-serves .list .item {
+                margin-top: 5px;
+                height: 30px;
+                color: #666;
+                display: inline-block;
+                margin-bottom: 10px; }
+                .shop-detail .detail-primary .detail-goods .goods-info .info-box .extra-serves .list .item .link {
+                  color: #666; }
+                  .shop-detail .detail-primary .detail-goods .goods-info .info-box .extra-serves .list .item .link > img {
+                    width: 24px;
+                    height: 24px;
+                    vertical-align: middle; }
+      .shop-detail .detail-primary .detail-goods .bigimg-box {
+        display: none;
+        position: absolute;
+        width: 380px;
+        height: 480px;
+        overflow: hidden;
+        z-index: 99;
+        top: 0px;
+        left: 400px; }
+        .shop-detail .detail-primary .detail-goods .bigimg-box > img {
+          width: 760px;
+          height: 960px;
+          text-align: center;
+          line-height: inherit;
+          position: absolute;
+          left: 0;
+          top: 0; }
+      .shop-detail .detail-primary .detail-goods .goods-topimg {
+        float: left;
+        margin-top: 30px;
+        margin-left: -100%;
+        width: 400px;
+        position: relative; }
+        .shop-detail .detail-primary .detail-goods .goods-topimg .big-img {
+          text-align: center;
+          width: 400px;
+          height: 480px;
+          position: relative; }
+          .shop-detail .detail-primary .detail-goods .goods-topimg .big-img .refractor {
+            display: none;
+            width: 200px;
+            height: 240px;
+            background: rgba(255, 255, 25, 0.5);
+            position: absolute;
+            z-index: 99999;
+            left: 0;
+            top: 0;
+            cursor: all-scroll; }
+          .shop-detail .detail-primary .detail-goods .goods-topimg .big-img > img {
+            position: absolute;
+            left: 0;
+            width: 400px;
+            height: 480px; }
+        .shop-detail .detail-primary .detail-goods .goods-topimg .small-img {
+          margin-top: 25px;
+          margin-left: 10px;
+          width: 380px;
+          height: 65px;
+          overflow: hidden; }
+          .shop-detail .detail-primary .detail-goods .goods-topimg .small-img .carousel {
+            width: 9999px;
+            margin: 0 auto; }
+            .shop-detail .detail-primary .detail-goods .goods-topimg .small-img .carousel > li {
+              float: left;
+              text-align: center;
+              width: 62px;
+              height: 60px;
+              margin: 0 5px; }
+              .shop-detail .detail-primary .detail-goods .goods-topimg .small-img .carousel > li > span {
+                display: inline-block;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.6); }
+              .shop-detail .detail-primary .detail-goods .goods-topimg .small-img .carousel > li > img {
+                width: 60px;
+                height: 60px; }
+    .shop-detail .detail-primary .detail-slide {
+      float: right;
+      z-index: 6;
+      overflow: hidden;
+      border-left: 1px solid #eee; }
+  .shop-detail .detail-content {
+    width: 1200px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 80px; }
+    .shop-detail .detail-content .con-main {
+      width: 760px;
+      float: left;
+      min-height: 1px; }
+    .shop-detail .detail-content .con-sidebar {
+      overflow: hidden;
+      width: 200px;
+      float: left;
+      height: 500px;
+      background: blue; }
+    .shop-detail .detail-content .con-extra {
+      position: absolute;
+      right: 0;
+      width: 240px;
+      background: green;
+      height: 100%; }
+
+/*# sourceMappingURL=magnifying.css.map */

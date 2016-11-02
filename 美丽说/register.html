@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+	</head>
+	<link rel="stylesheet" href="css/load.css" />
+	<script type="text/javascript" src="jquery/jquery-1.11.3.js" ></script>
+	<body>
+		<div class="main">
+			<h1>
+				<a href="index.html"><img src="img/mls-logo.png"/></a>
+			</h1>
+			<div class="content">
+				<div class="left-side">
+					<a href="javascript:;"><img src="img/idid.jpg"/></a>
+				</div>
+				<div class="right-side">
+					<p class="title">
+						登录美丽说
+						<a class="register" href="load.html">已有账号</a>
+					</p>
+					<form>
+						<div class="form">
+							<p class="err-tips"></p>
+							<div class="item">
+								<input type="text" id="phone1" class="phone ui-input" placeholder="手机号/邮箱/用户名" />
+							</div>
+							<div class="item">
+								<input type="password" id="password1" class="ui-input code" placeholder="密码" />
+							</div>
+							<div class="item">
+								<input type="password" id="password2" class="ui-input code" placeholder="再次输入密码" />
+							</div>
+							<div class="item">
+								<div class="submit sub-btn">立即注册</div>
+							</div>
+							<div class="item" style="font-size: 12px;">
+								<label>
+									<input type="checkbox" name="read" id="remenber" value="1" /><a href="javascript:;">同意美丽说注册条款</a>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer"></footer>
+	</body>
+</html>
+ <script>
+ 	//foot的load
+ 	$(".footer").load("footer.html");
+ </script>
+ 
+ //验证信息
+ <script type="text/javascript" src="js/cookie.js" ></script>
+<script type="text/javascript" src="js/register.js" ></script>
+ <script type="text/javascript">
+	register()
+</script>	

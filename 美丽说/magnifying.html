@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>放大镜页面</title>
+		<link rel="stylesheet" href="css/magnifying.css" />
+		<script type="text/javascript" src="jquery/jquery-1.11.3.js" ></script>
+	</head>
+	<body>
+		<div class="top-bar">
+			<div class="top-wrap">
+				<a class="backhome" href="index.html">美丽说首页</a>
+				<ul class="header-top">
+					<li class="s1">
+						<a href="javascript:;">注册</a>
+					</li>
+					<li class="s1">
+						<a href="javascript:;">登录</a>
+					</li>
+					<li class="s1 my-order has-line">
+						<a href="javascript:;">我的订单</a>
+					</li>
+					<li class="s1 has-line shop-cart-v2">
+						<a class="cart-info-wrap" href="#">
+							<span class="cart-info">购物车</span>
+						</a>
+						<div class="shop-cart-info">
+							<ul class="max-height-ie6">
+								
+								<div class="subbox">
+									<div class="fr">
+										<a class="goel">删除</a>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</li>
+					<li class="s1 has-icon has-line">
+						<a href="javascript:;">帮助中心</a>
+						<i class="icon-delta"></i>
+						<ol class="ext-mode">
+							<li class="s2"><a target="_blank" >买家服务</a></li>
+							<li class="s2"><a target="_blank" >商家服务</a></li>
+							<li class="s2"><a target="_blank" >规则中心</a></li>
+						</ol>
+					</li>
+					<li class="s1 has-line">
+						<a href="javascript:;">商家后台</a>
+					</li>
+				</ul>
+			</div>
+			<div class="shop-header">
+				<div class="head">
+					<div class="userinfo">
+						<a class="avatar" href="javascript:;">
+							<img class="face" src="img/baface.jpg"/>
+						</a>
+						<div class="shopname">
+							<div class="namewrap">
+								<a class="namef" href="javascript:;">蜡笔小猪</a>
+								<p class="mark"></p>
+							</div>
+							<div class="shopscore">
+								<p>
+									<span class="s-cart">
+										描述
+										<b>4.86</b>
+									</span>
+									<span class="s-cart">
+										价格
+										<b>4.85</b>
+									</span>
+									<span class="s-cart">
+										质量
+										<b>4.85</b>
+									</span>
+									<span class="s-cart">
+										服务
+										<b>4.87</b>
+									</span>
+								</p>
+								<div class="shop-info">
+									<div class="shop-info-content clearfix">
+										<div class="info-box fl">
+											<ol class="li li3">
+												<li><span class="tag">所在地区：</span>广东 广州</li>
+												<li><span class="tag">商品数：</span>367</li>
+												<li><span class="tag">收藏数：</span>2432</li>
+												<li><span class="tag">销售量：</span>3412</li>
+												<li><span class="tag">创建时间：</span>2016年02月23日</li>
+												<li><span class="tag">店铺保证金：</span>已缴纳</li>
+												<li class="company-info clearfix"><span class="tag">公司名：</span>
+										             <div class="c-name">深圳市十里桃花服饰有限公司</div></li>
+										    </ol>
+										</div>
+										<ol class="li li1">
+											<li class="title">动态评分</li>
+											<li>描述相符：<span class="num">4.86</span></li>
+											<li>质量满意：<span class="num">4.85</span></li>
+											<li>价格合理：<span class="num">4.85</span></li>
+											<li>服务周到：<span class="num">4.87</span></li>
+										</ol>
+										<ol class="li li2"><li class="title">比同行平均</li>
+											<li><span class="tag up">高</span><span class="num">6.81%</span></li>
+											<li><span class="tag up">高</span><span class="num">7.3%</span></li>
+											<li><span class="tag up">高</span><span class="num">7.06%</span></li>
+											<li><span class="tag up">高</span><span class="num">6.1%</span></li>
+										</ol>
+										<ol class="li li4">
+											<li class="title"> 本店 </li>
+											<li>平均发货时间：<span class="low">0.77</span>天</li>
+										</ol>
+										<ol class="li li5">
+											<li class="title"> 行业 </li>
+											<li>0.46 天</li>
+										</ol>
+									</div>
+									<div class="shop-info-content clearfix">
+										<div class="info-box fl">
+											<ol class="li li3">
+												<li><span class="tag">所在地区：</span>广东 广州</li>
+												<li><span class="tag">商品数：</span>367</li>
+												<li><span class="tag">收藏数：</span>2432</li>
+												<li><span class="tag">销售量：</span>3412</li>
+												<li><span class="tag">创建时间：</span>2016年02月23日</li>
+												<li><span class="tag">店铺保证金：</span>已缴纳</li>
+												<li class="company-info clearfix">
+													<span class="tag">公司名：</span>
+													<div class="c-name">深圳市十里桃花服饰有限公司</div>
+												</li>
+											</ol>
+										</div>
+										<ol class="li li1">
+											<li class="title">动态评分</li>
+											<li>描述相符：<span class="num">4.86</span></li>
+											<li>质量满意：<span class="num">4.85</span></li>
+											<li>价格合理：<span class="num">4.85</span></li>
+											<li>服务周到：<span class="num">4.87</span></li>
+										</ol>
+										<ol class="li li2">
+											<li class="title">比同行平均</li>
+											<li><span class="tag up">高</span><span class="num">6.81%</span></li>
+											<li><span class="tag up">高</span><span class="num">7.3%</span></li>
+											<li><span class="tag up">高</span><span class="num">7.06%</span></li>
+											<li><span class="tag up">高</span><span class="num">6.1%</span></li>
+										</ol>
+										<ol class="li li4">
+											<li class="title"> 本店 </li>
+											<li>平均发货时间：<span class="low">0.77</span>天</li>
+										</ol>
+										<ol class="li li5">
+											<li class="title"> 行业 </li><li>0.46 天</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shop-action">
+							<a class="shop-follow" href="javascript:;">收藏</a>
+							<a class="chart" href="javascript:;">
+								<div class="mlstalk kefu">联系客服</div>
+							</a>
+						</div>
+						<div class="icon-show-score"></div>
+						<div class="line-right"></div>
+					</div>
+					<div class="shopsearch">
+						<div class="top-nav-search">
+							<form>
+								<div class="text-wrap">
+									<input type="text" class="text ts-txt" placeholder="输入你想要的商品..."/>
+									<a class="search-inshop">搜本站</a>
+									<input type="submit" class="submit-btn" value="搜全站" />
+								</div>
+							</form>
+							<div class="top-search-hint"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ovbox">
+				<div class="mod-list">
+					<div class="topbanner mod-cont">
+						<a class="shop-bg-img" href="javascript:;"><img src="img/mod-liat.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="ovbox white-style mod-topNav">
+				<div class="mod-list">
+					<div class="mod-item">
+						<div class="mod-cont topNav">
+							<ol>
+								<li>
+									<a href="index.html">首页</a>
+								</li>
+								<li class="all">
+									<a href="javascript:;">全部商品</a>
+								</li>
+							</ol>
+							<div class="category-list">
+								<dl>
+									<dd class="submenu">
+										<a href="javascript:;">套装</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">裤子/下装</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">半身裙</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">背带裤/背带裙</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">短裤</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">外套</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">连衣裙</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">上衣/打底衫</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">针织衫/毛衣</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">卫衣</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">衬衫</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">羽绒服/棉衣</a>
+									</dd>
+									<dd class="submenu">
+										<a href="javascript:;">毛呢/大衣</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shop-detail">
+				<div class="detail-primary">
+					<div class="detail-goods">
+						<div class="clearfix">
+							<div class="goods-info">
+								<div class="info-box">
+									<h1 class="goods-title">
+										<span class="goods-title-des"></span>
+									</h1>
+									<div class="goods-prowrap goods-main">
+										<div class="propery-box">
+											<div class="propery-type">价格：</div>
+											<div class="propery-price"></div>
+										</div>
+										<div class="propery-box">
+											<div class="propery-type">促销价：</div>
+											<div class="price newprice"></div>
+											<div class="propery-extra">
+												<span class="mr10">
+													评价：<span class="num" style="color: #333;"></span>
+												</span>
+												<span>
+													累计销量：<span class="num-sale" style="color: #333;"></span>
+												</span>
+											</div>
+										</div>
+										<div class="propery-box">
+											<div class="propery-type">店铺优惠：</div>
+											<div class="propery-module">
+												 <span class="info shopPromotion-info">购物满1元立减1元</span> 
+												 <span class="more"></span>
+												 <div class="favorable-list"> 
+												 	<ul> 
+												 		<div class="favorable-item fl">
+												 			<span class="dot fl">▪</span>
+												 			<span class="fl">购物满1元立减1元</span> 
+												 			<span class="get-btn">领取</span>
+												 		</div>
+												 		<div class="favorable-item fl"> 
+												 			<span class="dot fl">▪</span>
+												 			<span class="fl">购物满95元立减3元</span> 
+												 			<span class="get-btn">领取</span>
+												 		</div> 
+											 			<div class="favorable-item fl"> 
+											 				<span class="dot fl">▪</span>
+											 				<span class="fl">购物满149元立减5元</span> 
+											 				<span class="get-btn">领取</span>
+											 			</div>
+											 			<div class="favorable-item fl">
+											 				<span class="dot fl">▪</span>
+											 				<span class="fl">购物满190元立减8元</span>
+											 			</div>  <div class="favorable-item fl">
+											 				<span class="dot fl">▪</span> 
+											 				<span class="fl">购物满300元立减30元</span> 
+											 			</div> 
+												 	</ul>
+												 	<b></b> 
+											</div> 
+											</div>
+										</div>
+									</div>
+									<div class="goods-im">
+										<div class="propery-type">客服：</div>
+										<div class="propery-type ptype1">联系客服</div>
+									</div>
+									<!--点击加入购物车后弹出是否去购物车结算的页面-->
+									<div class="getout-car">
+										<div class="giveup"></div>
+										<div class="zhuan"></div>
+										<div class="content-car">
+											<p class="mac-mb10">
+												<span class="mac-success-txt module-cart-icons">已将商品添加到购物车</span>
+											</p>
+											<p>
+												<a href="shopping-car.html" class="goto-car module-cart-icons">去购物车结算>></a>
+											</p>
+										</div>
+									</div>
+				<!--如果没有选择款式和尺码点击加入购物车回让这个弹出来选择     放在了外面定位过去不会影响布局-->
+									<div class="pannel-title">
+										<b class="pannel-close"></b>
+										<span class="choose-goods-info">选择商品信息</span>
+									</div>
+				<!--加上backchoice只为了价格边框-->
+									<div class="backchoice">
+										<div class="goods-box">
+											<div class="propery-type">款式：</div>
+											<div class="ptype2">
+					        				    <ol class="J_StyleList style-list clearfix olq1">
+					        				    	<!--款式-->
+					        				    </ol>
+											</div>
+										</div>
+										<div class="propery-size">
+											<div class="propery-type">尺码：</div>
+											<div class="ptype2">
+					        				    <ol class="J_StyleList style-list clearfix olq2">
+					        				    	<!--尺码-->
+					        				    </ol>
+											</div>
+										</div>
+										<div class="propery-num">
+											<div class="propery-type">数量：</div>
+											<div class="ptype2">
+					        				   <div class="goods-num f1">
+					        				   		<span class="num-reduce num-disable"></span>
+							                        <input class="num-input" value="1" type="text">
+							                        <span class="num-add "></span>
+	                    						</div>
+					        				   <div class="goods-stock f1">
+					        				   	库存<span class="ostock"></span>件
+					        				   </div> 
+											</div>
+										</div>
+									</div>
+									
+									<div class="goods-buy">
+										<a href="javascript:;" class="buy-btn buy-now">立刻购买</a>
+                						<a href="javascript:;" class="buy-cart buy-btn">加入购物车</a>
+          							</div>
+									<div class="goods-social">
+										<div class="item fav">
+											<b></b>
+											<span class="fav-num"></span>
+										</div>
+										<div class="item share">
+											<b></b>
+											分享
+											<div class="share-w"></div>
+										</div>
+									</div>
+									<div class="extra-serves">
+										<div class="propery-type">服务承诺：</div>
+										<ul class="list">
+											<li class="item">
+												<span class="link">
+													<img src="img/i1.png"/>
+													退货补运费
+												</span>
+											</li>
+											<li class="item">
+												<span class="link">
+													<img src="img/i2.png"/>
+													7天无理由退货
+												</span>
+											</li>
+											<li class="item">
+												<span class="link">
+													<img src="img/i3.png"/>
+													先行赔付
+												</span>
+											</li>
+											<li class="item">
+												<span class="link">
+													<img src="img/i4.png"/>
+													72小时发货
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="goods-topimg">
+								<div class="big-img">
+									<div class="refractor"></div>
+									<!--大图-->
+								</div>
+								<div class="small-img">
+									<ul class="carousel">
+										
+									</ul>
+									<!--<span class="goto pre"></span>
+									<span class="goto next"></span>	-->
+								</div>
+								<div class="bigimg-box">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="detail-slide">
+						<img src="img/slide.jpg"/>
+					</div>
+				</div>
+				<div class="detail-content">
+					<div class="con-sidebar">1</div>
+					<div class="con-main">2</div>
+					<div class="con-extra">3</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/cookie.js" ></script>
+<script>
+
+
+
+
+
+
+
+
+	//鼠标放上去购物车显示出来
+	$(".shop-cart-v2").mouseover(function(){
+		$(".shop-cart-info").eq(0).css("display","block");
+	}).mouseout(function(){
+		$(".shop-cart-info").eq(0).css("display","none");
+	})
+
+joinin();
+function joinin(){
+	//购物车加入商品
+	var $oParent=$(".max-height-ie6").eq(0);
+	var str = document.cookie;//找到cookie
+    var list = [];
+    var char = "goodsid_";
+    for (var i = 0; i < str.length; i++) {
+        var index = str.indexOf(char, i);
+        if (index == i) {  
+            var starIndex = i + 8;
+            var endIndex = str.indexOf("=", starIndex);
+            var id = str.substring(starIndex, endIndex);
+            list.push(id)
+        }
+    }
+	//console.log(list) //goods001   goods002
+     //移除cookie
+	function removeCookieById(id) {
+   		var detailList = ["goodsid", "goodsDesc", "goodsPic", "goodsSize", "goodsNewPrice","goodsOldPrice","goodsNum"];
+        for (var i = 0; i < detailList.length; i++) {
+            setCookie(detailList[i] + "_" + id, "", -1000);
+        }
+   }	
+	for (var i = 0; i < list.length; i++) {
+		var _goodsid = getCookie("goodsid_" + id);
+		var _goodsPic = getCookie("goodsPic_" + id);
+        var _goodsDesc= decodeURI(getCookie("goodsDesc_" + id)); 
+        var _goodsSize = getCookie("goodsSize_" + id);
+		var _goodsNewPrice = getCookie("goodsNewPrice_" + id);
+		var _goodsNum = getCookie("goodsNum_" + id);
+		var id = list[i];
+        $oLi=$("<li />");
+        $oLi.attr({"id":_goodsid});
+        $oParent.prepend($oLi);
+        $oA=$("<a class='imgbox' />");
+        $oLi.prepend($oA);
+        $oImg=$("<img class='imgsrc' width='45' />");
+        $oImg.attr({"src":_goodsPic});
+        $oA.prepend($oImg);
+        $oA1=$("<a class='title imgtit' />");
+        $oA1.html(decodeURI(_goodsDesc));
+        $oLi.prepend($oA1);
+        $oSpan=$("<span class='info imginfo' />");
+        $oSpan.html("数量: "+_goodsNum+"件 尺码 :"+_goodsSize);
+        $oLi.prepend($oSpan);
+        $oSpan1=$("<span class='price imgprice' />");
+        $oSpan1.html(decodeURI(_goodsNewPrice)); 
+        $oLi.prepend($oSpan1);
+        $oSpan2=$("<span class='del' />");
+        $oSpan2.html("删除"); 
+        $oLi.prepend($oSpan2);
+        
+        //点击删除移除li
+        $oSpan2.click(function(){
+	    	$(this).parent().remove();	
+	    	var id=$(this).parent().attr("id");
+	    	removeCookieById(id)
+	    })
+        //点击goel删除所有的商品和cookie
+		$(".subbox").click(function(){
+			for (var i=0;i<$(".max-height-ie6 li").length;i++) {
+				var oId=$(".max-height-ie6 li").eq(i).attr("id");
+				removeCookieById(oId)
+			}
+			$(".max-height-ie6").eq(0).find("li").remove();
+		})
+   } 	
+}	
+	
+		//选出商品加入购物车
+	$(".buy-cart").eq(0).click(function(){
+		if($(".olq1 li").hasClass("c")&&$(".olq2 li").hasClass("c")){
+			$(".backchoice").eq(0).css({"border":"none"});
+			$(".pannel-title").eq(0).css({"display":"none"});
+			$(".getout-car").eq(0).css("display","block");
+			setTimeout(function(){
+				$(".zhuan").eq(0).css("height",0);
+				$(".content-car").eq(0).css("display","block");
+			},2000)
+		$(".giveup").click(function(){
+			$(".getout-car").eq(0).css("display","none");
+		})
+		
+		
+		//设置 购物车cookie
+		var _goodsId=window.location.href.split("?")[1].split("=")[1];
+        var _goodsDesc = encodeURI($(".goods-title-des").eq(0).html());
+        var _goodsPic = $(".olq1 li").eq(0).find("img").attr("src");
+        var _goodsNum = $(".num-input").eq(0).val()*1;
+        var _goodsOldPrice = encodeURI($(".propery-price").eq(0).html());
+        var _goodsNewPrice = encodeURI($(".newprice").eq(0).html());
+        var _goodsSize=$(".olq2 li").eq(0).html();
+        var goodsId = getCookie("goodsid_" + _goodsId);
+        
+        if (goodsId) {
+            var num = getCookie("goodsNum_" + _goodsId) * 1;
+            _goodsNum += num;
+        }
+        setCookie("goodsid_" + _goodsId, _goodsId, 100);
+        setCookie("goodsDesc_" + _goodsId, _goodsDesc, 100);
+        setCookie("goodsPic_" + _goodsId, _goodsPic, 100);
+        setCookie("goodsNum_" + _goodsId, _goodsNum, 100);
+        setCookie("goodsOldPrice_" + _goodsId, _goodsOldPrice, 100);
+        setCookie("goodsNewPrice_" + _goodsId, _goodsNewPrice, 100);
+        setCookie("goodsSize_" + _goodsId, _goodsSize, 100);
+        
+   		//清空ul里面的Li避免重复扫描COOKie 使内容重复
+   		$(".max-height-ie6").eq(0).find("li").remove();
+   		joinin()
+		}else{
+			$(".backchoice").eq(0).css({"border":"1px solid red"});
+			$(".pannel-title").css({"display":"block"});
+		}
+	})
+			
+	//点击X后可以关掉边框		
+	$(".pannel-close").click(function(){
+		$(".backchoice").eq(0).css({"border":"none"});
+		$(".pannel-title").eq(0).css({"display":"none"});
+	})
+						
+		//点击加号的三个功能 1.减号出现2.数字加一3.不能大于库存
+		$(".num-add").eq(0).bind("click",function(){
+			var $num=$(".num-input").eq(0).val();
+			$num++;
+			if($num>1){
+				$(".num-reduce").eq(0).removeClass("num-disable");
+			}
+			$maxnum=$(".ostock").eq(0).html();
+			if($num>$maxnum){
+				alert("您所填写的商品数量超过库存！");
+				$num=$maxnum;
+			}
+			$(".num-input").eq(0).val($num);
+			
+		})
+		//减号的作用
+		$(".num-reduce").eq(0).click(function(){
+			var $num=$(".num-input").eq(0).val();
+			$num--;
+			if($num>1){
+				$(".num-input").eq(0).val($num);
+			}else if($num<=1){
+				$(".num-input").eq(0).val(1);
+				$(".num-reduce").eq(0).addClass("num-disable");
+			}
+			
+		})
+	
+			
+	//让全部商品显示出来
+	$(".topNav .all").eq(0).mouseover(function(){
+		$(".category-list").eq(0).css({"display":"block"});
+	}).mouseout(function(){
+		$(".category-list").eq(0).css({"display":"none"});
+	})
+	$(".category-list").eq(0).mouseover(function(){
+		$(".category-list").eq(0).css({"display":"block"});
+	}).mouseout(function(){
+		$(".category-list").eq(0).css({"display":"none"});
+	})
+	//显示优惠券
+	$(".propery-module").mouseover(function(){
+		$(".favorable-list").css({"display":"block"});
+	}).mouseout(function(){
+		$(".favorable-list").css({"display":"none"});
+	});
+	$(".favorable-list").mouseover(function(){
+		$(".favorable-list").css({"display":"block"});
+	}).mouseout(function(){
+		$(".favorable-list").css({"display":"none"});
+	});
+	
+	//鼠标进入事件fav 加边框   QQ等图标显示
+	$(".fav").hover(function(){
+		$(this).css({"border": "1px solid #ff3366"})
+	},function(){
+		$(this).css({"border": "1px solid #ddd"})
+	})
+	$(".share").hover(function(){
+		$(this).find(".share-w").css({"display":"block"});
+	},function(){
+		$(this).find(".share-w").css("display","none")
+	})
+
+</script>
+<script>
+	function magnify(){
+		//carousel里面遮罩层
+		//放大镜效果
+		$(".big-img").eq(0).mousemove(function(e){
+			var e=e||window.event;
+			var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+			var scrollLeft=document.documentElement.scrollLeft||document.body.scrollLeft;
+			//console.log(e.clientX+" "+e.clientY);
+			var nX=e.clientX-$(".refractor").width()/2-$(".goods-topimg").offset().left+scrollLeft;
+			var nY=e.clientY-$(".refractor").height()/2-$(".goods-topimg").offset().top+scrollTop;
+			//console.log(nX+" "+nY)
+			var bigimgX=$(".bigimg-box img").width();
+			var bigimgY=$(".bigimg-box img").height();
+			var smallimgX=$(".big-img").width();
+			var smallimgY=$(".big-img").height();
+			var maxX=smallimgX-$(".refractor").width();
+			var maxY=smallimgY-$(".refractor").height();
+			$(".refractor").css("display","block");
+			$(".bigimg-box").css("display","block");
+			
+			if(nX<=0)
+			{
+				nX=0;
+			}
+			else if(nX>=maxX)
+			{
+				nX=maxX;
+			}
+			if(nY<=0)
+			{
+				nY=0;
+			}
+			else if(nY>=maxY)
+			{
+				nY=maxY;
+			}
+			$(".refractor").css({"left":nX,"top":nY});
+			$(".bigimg-box img").css({"left":-nX*bigimgX/smallimgX,"top":-nY*bigimgY/smallimgY});
+		}).mouseout(function(){
+			$(".refractor").css("display","none");
+			$(".bigimg-box").css("display","none");
+		})
+	}
+</script>
+					<script>
+				var goods_id=window.location.href.split("?")[1].split("=")[1];
+					$.getJSON("date/magifying-goods.json", function(json){
+					   for(var i in json){
+						 	var oId=json[i]["id"];
+							if(oId==goods_id){
+								var html="";
+								var desc=json[i].desc;
+								var oldprice=json[i].oldprice;
+								var newprice=json[i].newprice;
+								var anum=json[i].volce;
+								var num_sale=json[i].coupon;
+								var astyle=json[i].ostyle;
+								var osize=json[i].osize;
+								var ostock=json[i].stock;
+								var favnum=json[i].favnum;
+								var src2=json[i].src2;
+								var src1=json[i].src1;
+								$(".goods-title-des").eq(0).html(desc);
+								$(".propery-price").eq(0).html(oldprice);
+								$(".newprice").eq(0).html(newprice);
+								$(".mr10 .num").eq(0).html(anum);
+								$(".num-sale").eq(0).html(num_sale);
+								$(".ostock").eq(0).html(ostock);
+								$(".fav-num").eq(0).html(favnum);
+
+								for (var j=0;j<astyle.length;j++) {
+									var $li=$("<li class='img-c' />");
+									$(".olq1").eq(0).append($li);
+									var $img=$("<img src="+astyle[j]+" />");
+									$($li).append($img);
+								}
+				        		for (var k=0;k<osize.length;k++) {
+									var $li=$("<li />");
+										$li.html(osize[k])
+									$(".olq2").eq(0).append($li);
+								}
+				        		//商品尺码选择加小勾标记
+								$(".style-list li").click(function(){
+									$(this).toggleClass("c").siblings().removeClass("c")
+								})
+								for(var n=0;n<src1.length;n++){
+									html+="<li><span></span><img src='"+src1[n]+"'/></li>";
+								}
+								$(".carousel").eq(0).html(html);
+//								for (var m=0;m<src2.length;m++) {
+//									html1="<img src='"+src2[0]+"'/>";
+//								}
+								var html1="<img src='"+src2[0]+"'/>";
+								$(".big-img").eq(0).append(html1);
+								$(".bigimg-box").html(html1);
+								magnify();
+								
+								//console.log(src2)
+							//点击小图切换大图
+							$(".carousel li").mouseover(function(){
+								var index=$(this).index()
+								$(".big-img img").attr({"src":src2[index]});
+								$(".bigimg-box img").attr({"src":src2[index]});
+								$(".carousel li").find("span").
+								css({"display":"block","opacity":"0.6"});
+								$(this).find("span").css({"opacity":"0"});
+								$(".carousel li").eq(index).css({"border-bottom":"2px solid red"}).siblings().css({"border-bottom":"none"})
+							})
+							}
+					    }
+					});
+					</script>

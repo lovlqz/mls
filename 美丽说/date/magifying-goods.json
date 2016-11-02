@@ -1,0 +1,44 @@
+[
+	{
+	"id":"good001",
+    "desc": "秋冬装新款女装潮毛呢白色韩版外套呢子羊毛大衣中长款",
+    "oldprice":"￥273.00",
+    "newprice": "￥185.64",
+    "volce":"115",
+    "coupon":"319",
+    "ostyle":["img/t1.jpg","img/t1.jpg","img/t1.jpg"],
+    "osize":["S","M","L","XL"],
+    "stock":"101",
+    "favnum":"1194",
+    "src1":["img/b1.jpg","img/b2.jpg","img/b3.jpg","img/b4.jpg","img/b5.jpg"],
+	"src2":["img/B1.png","img/B2.png","img/B3.png","img/B4.png","img/B5.png"]
+	},
+	{
+	"id":"good002",
+    "desc": "卢卡斯记得拉上京东卡后就开始爱的啊大大爱的爱的吖",
+    "oldprice":"￥254.00",
+    "newprice": "￥145.64",
+    "volce":"165",
+    "coupon":"419",
+    "ostyle":["img/t2.jpg","img/t3.jpg"],
+    "osize":["S","M","L","XL"],
+    "stock":"575",
+    "favnum":"1524",
+    "src1":["img/c1.jpg","img/c2.jpg","img/c3.jpg","img/c4.jpg"],
+	"src2":["img/C1.png","img/C2.png","img/C3.png","img/C4.png"]
+	},
+	{
+	"id":"good003",
+    "desc": "士大夫阿三啦酒啊就家里收到简历发升级到封建时代浪费",
+    "oldprice":"￥654.00",
+    "newprice": "￥385.14",
+    "volce":"915",
+    "coupon":"1589",
+    "ostyle":["img/t4.jpg","img/t5.jpg"],
+    "osize":["S","M","L","XL"],
+    "stock":"515",
+    "favnum":"1524",
+    "src1":["img/d1.jpg","img/d2.jpg","img/d3.jpg","img/d4.jpg","img/d5.jpg"],
+	"src2":["img/D1.png","img/D2.png","img/D3.png","img/D4.png","img/D5.png"]
+	}
+]
